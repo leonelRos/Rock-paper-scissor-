@@ -1,0 +1,33 @@
+html, * {
+    font-family: helvetica;
+    box-sizing: border-box;
+   }
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main  {
+    display: grid;
+    grid-template-columns: 30vmin 15vmin 30vmin;
+    grid-template-rows: 10vmin 10vmin 20vmin 10vmin;
+}
+main * {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+main button {
+    grid-column: 1 / 4;
+    margin: 2vmin;
+}
+#p-result, #c-result {
+    border: 3vmin solid white;
+    border-radius: 5vmin;
+    margin: 1fr;
+}
+#p-result img, #c-result img {
+    width: 100%;
+}
